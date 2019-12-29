@@ -15,16 +15,25 @@ import './App.css';
 
 //{{}} is js
 function App() {
+  const cityTimeData = [
+    ["Seoul", 10],
+    ["Beijing", 9],
+    ["Sydney", 12],
+    ["LA", 17],
+    ["Busan", 10]
+  ]
+
+  const WorldClockList = cityTimeData.map((citytime, index)=>
+    <WorldClock city={citytime[0]} time = {citytime[1]} key = {index}/>
+  )
+
   return (
     <div className="App">
       <h1 className={'myStyle'}> Welcome! </h1> 
       <div className={'post'}>
         this is first posting!
       </div>
-      <WorldClock city={"Seoul"} time = {10}/>
-      <WorldClock city={"Beijing"} time = {9}/>
-      <WorldClock city={"Sydney"} time = {12}/>
-      <WorldClock city={"LA"} time = {17}/>
+        {WorldClockList}
       <table>
         <tr><td>1</td></tr>
         <tr><td>2</td></tr>
@@ -51,7 +60,6 @@ function WorldClock(props) {
     <div className = {"WorldClock"}>
       <h2> City: {props.city} </h2>
       <p> Time: {props.time} </p>
-      
     </div>
   )
 }
