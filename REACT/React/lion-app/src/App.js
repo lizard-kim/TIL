@@ -4,10 +4,10 @@ import './App.css';
 
 
 // component
-const myStyle = {
+/* const myStyle = {
   color: 'blue',
   fontWeight: 900
-} // for JS, Use camel naming and string
+} */ // for JS, Use camel naming and string
 
 // JSX -> HTML tag
 // JSX -> css using style (jsx)
@@ -21,7 +21,10 @@ function App() {
       <div className={'post'}>
         this is first posting!
       </div>
-      
+      <WorldClock city={"Seoul"} time = {10}/>
+      <WorldClock city={"Beijing"} time = {9}/>
+      <WorldClock city={"Sydney"} time = {12}/>
+      <WorldClock city={"LA"} time = {17}/>
       <table>
         <tr><td>1</td></tr>
         <tr><td>2</td></tr>
@@ -30,7 +33,7 @@ function App() {
   );
 }
 
-function App2() {
+/* function App2() {
   return (
     <div className="App">
       <h1 style={myStyle}> Welcome! </h1> 
@@ -40,7 +43,19 @@ function App2() {
       </table>
     </div>
   );
+} */
+
+//12.29
+function WorldClock(props) {
+  return(//div는 한개씩만 쓸 수 있다. div안에 div추가 불가
+    <div className = {"WorldClock"}>
+      <h2> City: {props.city} </h2>
+      <p> Time: {props.time} </p>
+      
+    </div>
+  )
 }
+
 
 // component export
 // default : this file export only one component (defalut) 
