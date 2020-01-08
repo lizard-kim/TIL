@@ -6,6 +6,9 @@
  ./the-road-to-learn-react/study_react/node_modules/
 ./the-road-to-learn-react/study_react/.pnp
 */*/node_modules
+*/*/.pnp
+*/*/*/node_modules
+*/*/*/.pnp
 /.pnp
 .pnp.js
 
