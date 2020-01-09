@@ -1,10 +1,10 @@
 import React from 'react';
-import Sass from './Sass'
+import Header from './Header'
 
 class App extends React.Component{
   render(){
     return(
-      <Sass />
+      <Header />
     )
   }
 }
