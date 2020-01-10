@@ -1,3 +1,14 @@
 # Today I Learned
 
-lizard is studying
+> lizard is studying
+
+### React study
+
+- ....
+
+
+
+### HTML / CSS
+
+- [ ] frontend_study (layout design)
+
