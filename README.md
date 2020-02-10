@@ -19,3 +19,6 @@
 
 - [ ] frontend_study (layout design)
 
+### Data Structure review
+ - [x] Stack
+
