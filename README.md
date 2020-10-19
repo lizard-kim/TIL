@@ -2,5 +2,5 @@
 
 > lizard is studying
 
-Reboot
+I love python
 
